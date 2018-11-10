@@ -16,7 +16,6 @@ has foo => (
 has bar => (
     is      => 'const',
     isa     => ArrayRef[Int],
-    coerce  => 1,
     default => sub { [1] },
 );
 

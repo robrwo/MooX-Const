@@ -84,6 +84,7 @@ sub _process_has {
                 }
 
                 $opts{isa} = Const[$isa];
+                $opts{coerce} = $opts{isa}->coercion;
 
             }
 
