@@ -72,7 +72,7 @@ feature.
 
 Robert Rothenberg <rrwo@cpan.org>
 
-This module was inspured by suggestions from Kang-min Liu 劉康民
+This module was inspired by suggestions from Kang-min Liu 劉康民
 <gugod@gugod.org> in a [blog post](http://blogs.perl.org/users/robert_rothenberg/2018/11/typeconst-released.html).
 
 # CONTRIBUTOR
