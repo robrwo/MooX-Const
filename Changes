@@ -12,6 +12,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Updated ABSTRACT and POD accordingly.
 
+  [Toolchain]
+  - Use a different Pod::Coverage plugin.
+
 v0.1.4    2018-11-10 12:27:54+00:00 Europe/London
   [Documentation]
   - Fixed typo.
