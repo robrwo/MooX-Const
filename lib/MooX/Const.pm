@@ -16,6 +16,16 @@ use namespace::autoclean;
 
 our $VERSION = 'v0.2.0';
 
+=for Pod::Coverage VERSION
+
+=cut
+
+sub VERSION { # for older Perls
+    my ( $class, $wanted ) = @_;
+    require version;
+    return version->parse($VERSION);
+}
+
 =head1 SYNOPSIS
 
   use Moo;

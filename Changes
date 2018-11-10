@@ -6,6 +6,9 @@ Revision history for {{ $dist->name }}:
 
   - Dies if a trigger is added to a constant attribute.
 
+  [Bug Fixes]
+  - Use version module for older Perls.
+
   [Documentation]
   - Updated ABSTRACT and POD accordingly.
 
