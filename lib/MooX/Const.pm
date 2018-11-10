@@ -105,7 +105,7 @@ sub _process_has {
 
 L<Moo>
 
-L<Types::Constant>
+L<Types::Const>
 
 L<Type::Tiny>
 
