@@ -124,6 +124,10 @@ sub _process_has {
                 $opts{isa} = Const[$isa];
                 $opts{coerce} = $opts{isa}->coercion;
 
+                if ($opts{trigger} && ($is ne 'wo')) {
+                    croak "triggers are not applicable to const attributes";
+                }
+
                 $opts{is}  = $is eq 'wo' ? 'rw' : 'ro';
 
             }
