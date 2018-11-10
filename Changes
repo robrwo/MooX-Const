@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Credited ideas for the module to Kang-min Liu 劉康民 <gugod@gugod.org>.
+
   [Toolchain]
   - Removed some redundant dependencies.
 

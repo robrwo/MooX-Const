@@ -2,6 +2,7 @@ package MooX::Const;
 
 # ABSTRACT: Syntactic sugar for creating constant Moo attributes
 
+use utf8;
 use v5.8;
 
 use Carp qw( croak );
@@ -120,6 +121,13 @@ L<Moo>
 L<Types::Const>
 
 L<Type::Tiny>
+
+=encoding utf8
+
+=head1 append:AUTHOR
+
+This module was inspured by suggestions from Kang-min Liu 劉康民
+<gugod@gugod.org> in a L<blog post|http://blogs.perl.org/users/robert_rothenberg/2018/11/typeconst-released.html>.
 
 =cut
 
