@@ -12,6 +12,8 @@ version v0.1.2
 use Moo;
 use MooX::Const;
 
+use Types::Standard -types;
+
 has thing => (
   is  => 'const',
   isa => ArrayRef[HashRef],
@@ -20,7 +22,18 @@ has thing => (
 
 # DESCRIPTION
 
-This is syntactic sugar for using [Types::Const](https://metacpan.org/pod/Types::Const) with [Moo](https://metacpan.org/pod/Moo).
+This is syntactic sugar for using [Types::Const](https://metacpan.org/pod/Types::Const) with [Moo](https://metacpan.org/pod/Moo). The
+SYNOPSIS above is equivalent to:
+
+```perl
+use Types::Const -types;
+
+has thing => (
+  is     => 'ro',
+  isa    => Const[ArrayRef[HashRef]],
+  coerce => 1,
+);
+```
 
 It modifies the `has` function to support "const" attributes.  These
 are read-only ("ro") attributes for references, where the underlying

@@ -20,6 +20,8 @@ our $VERSION = 'v0.1.2';
   use Moo;
   use MooX::Const;
 
+  use Types::Standard -types;
+
   has thing => (
     is  => 'const',
     isa => ArrayRef[HashRef],
@@ -27,7 +29,16 @@ our $VERSION = 'v0.1.2';
 
 =head1 DESCRIPTION
 
-This is syntactic sugar for using L<Types::Const> with L<Moo>.
+This is syntactic sugar for using L<Types::Const> with L<Moo>. The
+SYNOPSIS above is equivalent to:
+
+  use Types::Const -types;
+
+  has thing => (
+    is     => 'ro',
+    isa    => Const[ArrayRef[HashRef]],
+    coerce => 1,
+  );
 
 It modifies the C<has> function to support "const" attributes.  These
 are read-only ("ro") attributes for references, where the underlying
