@@ -19,4 +19,16 @@ dies_ok {
 
 is $o->bar->[0] => 1, 'element was not changed';
 
+lives_ok {
+
+    $o->bo( { a => 1, b => 2 } );
+
+} 'set a write-once attribute';
+
+dies_ok {
+
+    ++$o->bo->{a};
+
+} 'cannot write again to a write-once attribute';
+
 done_testing;

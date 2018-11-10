@@ -1,6 +1,6 @@
 package MooX::Const;
 
-# ABSTRACT: Syntactic sugar for creating constant Moo attributes
+# ABSTRACT: Syntactic sugar for constant and write-once Moo attributes
 
 use utf8;
 use v5.8;
@@ -52,6 +52,17 @@ object.
 Simple value types such as C<Int> or C<Str> are silently converted to
 read-only attributes.
 
+As of v0.2.0, it also supports write-once ("wo") attributes for
+references:
+
+  has setting => (
+    is  => 'wo',
+    isa => HashRef,
+  );
+
+This allows you to set the attribute I<once>. The value is coerced
+into a constant, and cannot be changed again.
+
 =cut
 
 sub import {
@@ -76,16 +87,31 @@ sub import {
 sub _process_has {
     my ( $name, %opts ) = @_;
 
-    if ( $opts{is} && $opts{is} eq 'const' ) {
+    my $is = $opts{is};
+
+    if ($is && $is =~ /^(?:const|wo)$/ ) {
 
         if ( my $isa = $opts{isa} ) {
-
 
             unless ( $isa->$_isa('Type::Tiny') ) {
                 croak "isa must be a Type::Tiny type";
             }
 
-            unless ($isa->is_a_type_of(Value)) {
+            if ($isa->is_a_type_of(Value)) {
+
+                if ($is eq 'wo') {
+
+                    croak "write-once attributes are not supported for Value types";
+
+                }
+                else {
+
+                    $opts{is}  = 'ro';
+
+                }
+
+            }
+            else {
 
                 unless ( $isa->is_a_type_of(Ref) ) {
                     croak "isa must be a type of Types::Standard::Ref";
@@ -98,9 +124,9 @@ sub _process_has {
                 $opts{isa} = Const[$isa];
                 $opts{coerce} = $opts{isa}->coercion;
 
-            }
+                $opts{is}  = $is eq 'wo' ? 'rw' : 'ro';
 
-            $opts{is}  = 'ro';
+            }
 
         }
         else {

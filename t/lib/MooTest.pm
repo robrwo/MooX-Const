@@ -24,4 +24,9 @@ has baz => (
     isa => Int,
 );
 
+has bo => (
+    is  => 'wo',
+    isa => HashRef,
+);
+
 1;

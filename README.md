@@ -1,6 +1,6 @@
 # NAME
 
-MooX::Const - Syntactic sugar for creating constant Moo attributes
+MooX::Const - Syntactic sugar for constant and write-once Moo attributes
 
 # VERSION
 
@@ -45,6 +45,19 @@ object.
 
 Simple value types such as `Int` or `Str` are silently converted to
 read-only attributes.
+
+As of v0.2.0, it also supports write-once ("wo") attributes for
+references:
+
+```perl
+has setting => (
+  is  => 'wo',
+  isa => HashRef,
+);
+```
+
+This allows you to set the attribute _once_. The value is coerced
+into a constant, and cannot be changed again.
 
 # SEE ALSO
 
