@@ -1,6 +1,4 @@
-requires "Carp" => "0";
 requires "Moo" => "1.006000";
-requires "Moo::Role" => "0";
 requires "Safe::Isa" => "0";
 requires "Types::Const" => "v0.3.0";
 requires "Types::Standard" => "0";

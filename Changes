@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Toolchain]
+  - Removed some redundant dependencies.
 
 v0.1.2    2018-11-10 01:30:19+00:00 Europe/London
   [Bug Fixes]
