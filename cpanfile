@@ -1,6 +1,6 @@
 requires "Moo" => "1.006000";
 requires "Safe::Isa" => "0";
-requires "Types::Const" => "v0.3.0";
+requires "Types::Const" => "v0.3.2";
 requires "Types::Standard" => "0";
 requires "namespace::autoclean" => "0";
 requires "perl" => "v5.8.0";
