@@ -59,6 +59,11 @@ has setting => (
 This allows you to set the attribute _once_. The value is coerced
 into a constant, and cannot be changed again.
 
+# ROADMAP
+
+Support for Perl versions earlier than 5.10 will be removed sometime
+in 2019.
+
 # SEE ALSO
 
 [Moo](https://metacpan.org/pod/Moo)

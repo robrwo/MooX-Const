@@ -154,6 +154,11 @@ sub _process_has {
     return ( $name, %opts );
 }
 
+=head1 ROADMAP
+
+Support for Perl versions earlier than 5.10 will be removed sometime
+in 2019.
+
 =head1 SEE ALSO
 
 L<Moo>
