@@ -6,7 +6,7 @@ use Moo;
 
 use Types::Standard -types;
 
-use MooX::Const;
+use MooX::Const v0.2.0;
 
 throws_ok {
 
