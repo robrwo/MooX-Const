@@ -24,3 +24,5 @@ local/
 
 perltidy.LOG
 perltidy.ERR
+
+cover_db/
