@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Other]
+  - Added recommended minimum version of Types::Const.
 
 v0.2.1    2018-11-16 18:28:00+00:00 Europe/London
   [Documentation]

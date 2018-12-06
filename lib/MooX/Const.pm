@@ -12,6 +12,8 @@ use Safe::Isa qw( $_isa );
 use Types::Const qw( Const );
 use Types::Standard qw( Value Object Ref );
 
+# RECOMMEND PREREQ: Types::Const v0.3.6
+
 use namespace::autoclean;
 
 our $VERSION = 'v0.2.2';
