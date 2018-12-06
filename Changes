@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Other]
   - Added recommended minimum version of Types::Const.
 
+  - Recommend Type::Tiny::XS.
+
 v0.2.1    2018-11-16 18:28:00+00:00 Europe/London
   [Documentation]
   - Added a ROADMAP section for planned changes.

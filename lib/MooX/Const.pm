@@ -13,6 +13,7 @@ use Types::Const qw( Const );
 use Types::Standard qw( Value Object Ref );
 
 # RECOMMEND PREREQ: Types::Const v0.3.6
+# RECOMMEND PREREQ: Type::Tiny::XS
 
 use namespace::autoclean;
 
