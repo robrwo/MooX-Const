@@ -17,7 +17,7 @@ use Types::Standard qw( Value Object Ref );
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.2.2';
+our $VERSION = 'v0.2.3';
 
 =for Pod::Coverage VERSION
 
