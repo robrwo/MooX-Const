@@ -8,7 +8,7 @@ use v5.10.1;
 use Carp qw( croak );
 use Moo       ();
 use Moo::Role ();
-use Safe::Isa qw( $_isa );
+use Scalar::Util qw/ blessed /;
 use Types::Const qw( Const );
 use Types::Standard qw( Value Object Ref );
 
@@ -96,7 +96,7 @@ sub _process_has {
 
         if ( my $isa = $opts{isa} ) {
 
-            unless ( $isa->$_isa('Type::Tiny') ) {
+            unless ( blessed($isa) && $isa->isa('Type::Tiny') ) {
                 croak "isa must be a Type::Tiny type";
             }
 
