@@ -147,7 +147,18 @@ sub _process_has {
     return ( $name, %opts );
 }
 
+=head1 KNOWN ISSUES
+
+Accessing non-existent keys for hash references will throw an
+error. This is a feature, not a bug, of read-only hash references, and
+it can be used to catch mistakes in code that refer to non-existent
+keys.
+
+Unfortunately, this behaviour is not replicated with array references.
+
 =head1 SEE ALSO
+
+L<Const::Fast>
 
 L<Moo>
 

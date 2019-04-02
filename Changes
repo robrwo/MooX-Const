@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Incompatable Changes]
   - Removed support for Perls before v5.10.1.
 
+  [Documentation]
+  - Documented handling of non-existent hash reference keys.
+
   [Tests]
   - Added more tests.
 

@@ -59,7 +59,18 @@ has setting => (
 This allows you to set the attribute _once_. The value is coerced
 into a constant, and cannot be changed again.
 
+# KNOWN ISSUES
+
+Accessing non-existent keys for hash references will throw an
+error. This is a feature, not a bug, of read-only hash references, and
+it can be used to catch mistakes in code that refer to non-existent
+keys.
+
+Unfortunately, this behaviour is not replicated with array references.
+
 # SEE ALSO
+
+[Const::Fast](https://metacpan.org/pod/Const::Fast)
 
 [Moo](https://metacpan.org/pod/Moo)
 
