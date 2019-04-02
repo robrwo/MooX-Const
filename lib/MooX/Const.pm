@@ -3,7 +3,7 @@ package MooX::Const;
 # ABSTRACT: Syntactic sugar for constant and write-once Moo attributes
 
 use utf8;
-use v5.8;
+use v5.10.1;
 
 use Carp qw( croak );
 use Moo       ();
@@ -18,15 +18,6 @@ use Types::Standard qw( Value Object Ref );
 use namespace::autoclean;
 
 our $VERSION = 'v0.3.0';
-
-=for Pod::Coverage VERSION
-
-=cut
-
-sub VERSION { # for older Perls
-    require version;
-    return version->parse($VERSION);
-}
 
 =head1 SYNOPSIS
 
@@ -155,11 +146,6 @@ sub _process_has {
 
     return ( $name, %opts );
 }
-
-=head1 ROADMAP
-
-Support for Perl versions earlier than 5.10 will be removed sometime
-in 2019.
 
 =head1 SEE ALSO
 

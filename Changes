@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Incompatable Changes]
+  - Removed support for Perls before v5.10.1.
 
 v0.2.2    2018-12-06 18:00:47+00:00 Europe/London
   [Other]
