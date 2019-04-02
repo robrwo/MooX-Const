@@ -4,7 +4,6 @@ requires "Types::Const" => "v0.3.3";
 requires "Types::Standard" => "0";
 requires "namespace::autoclean" => "0";
 requires "perl" => "v5.10.1";
-requires "version" => "0.77";
 recommends "Type::Tiny::XS" => "0";
 recommends "Types::Const" => "v0.3.6";
 
