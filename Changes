@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Added "strict" option to only apply read-only constraints in
+    strict mode.
 
 v0.3.1    2019-04-02 18:47:14+01:00 Europe/London
   [Other]
