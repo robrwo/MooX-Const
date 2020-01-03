@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Bump copyright year.
 
+  [Tests]
+  - Add tests with MooX::TypeTiny.
+
   [Other]
   - Recommend MooX::TypeTiny as prereq.
 

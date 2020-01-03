@@ -14,6 +14,7 @@ on 'test' => sub {
   requires "Moo" => "1.006000";
   requires "Test::More" => "0";
   requires "Test::Most" => "0";
+  requires "if" => "0";
   requires "lib" => "0";
 };
 
