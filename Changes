@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.4.1    2020-01-03 18:34:29+00:00 Europe/London
   [Documentation]
   - Bump copyright year.
 
