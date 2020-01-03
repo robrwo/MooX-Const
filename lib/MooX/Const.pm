@@ -15,6 +15,7 @@ use Types::Standard qw( Value Object Ref );
 
 # RECOMMEND PREREQ: Types::Const v0.3.6
 # RECOMMEND PREREQ: Type::Tiny::XS
+# RECOMMEND PREREQ: MooX::TypeTiny
 
 use namespace::autoclean;
 

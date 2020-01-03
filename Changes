@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Bump copyright year.
 
+  [Other]
+  - Recommend MooX::TypeTiny as prereq.
+
 v0.4.0    2019-11-15 17:54:30+00:00 Europe/London
   [Enhancements]
   - Added "strict" option to only apply read-only constraints in
