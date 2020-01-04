@@ -3,7 +3,13 @@
 use Test::Most;
 
 BEGIN {
-    $ENV{MOOX_CONST_TYPE_TINY} = 1;
+    eval "require MooX::TypeTiny";
+    if ($@) {
+        plan skip_all => "MooX::TypeTiny required";
+    }
+    else {
+        $ENV{MOOX_CONST_TYPE_TINY} = 1;
+    }
 }
 
 use lib 't/lib';
