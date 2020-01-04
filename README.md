@@ -83,6 +83,11 @@ keys.
 
 Unfortunately, this behaviour is not replicated with array references.
 
+## Using with Moose
+
+This module appears to work with [Moose](https://metacpan.org/pod/Moose), and there is now a small
+test suite.
+
 # SEE ALSO
 
 [Const::Fast](https://metacpan.org/pod/Const::Fast)
