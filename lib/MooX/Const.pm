@@ -178,10 +178,12 @@ Unfortunately, this behaviour is not replicated with array references.
 See L<Types::Const> for other known issues related to the C<Const>
 type.
 
-=head2 Using with Moose
+=head2 Using with Moose and Mouse
 
 This module appears to work with L<Moose>, and there is now a small
 test suite.
+
+It does not work with L<Mouse>. Pull requests are welcome.
 
 =head1 SEE ALSO
 

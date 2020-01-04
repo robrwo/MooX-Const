@@ -2,7 +2,7 @@ Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
   [Documentation]
-  - Added a note about using with Moose.
+  - Added a note about using with Moose and Mouse.
 
   - Added link to Types::Const in KNOWN ISSUES.
 
