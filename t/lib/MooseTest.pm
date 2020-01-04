@@ -35,4 +35,4 @@ has bop => (
     default => sub { { x => 1 } },
 );
 
-1;
+__PACKAGE__->meta->make_immutable();
