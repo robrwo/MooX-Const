@@ -83,6 +83,9 @@ keys.
 
 Unfortunately, this behaviour is not replicated with array references.
 
+See [Types::Const](https://metacpan.org/pod/Types::Const) for other known issues related to the `Const`
+type.
+
 ## Using with Moose
 
 This module appears to work with [Moose](https://metacpan.org/pod/Moose), and there is now a small

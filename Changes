@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Added a note about using with Moose.
 
+  - Added link to Types::Const in KNOWN ISSUES.
+
   [Tests]
   - Added tests with Moose.
 

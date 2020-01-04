@@ -175,6 +175,9 @@ keys.
 
 Unfortunately, this behaviour is not replicated with array references.
 
+See L<Types::Const> for other known issues related to the C<Const>
+type.
+
 =head2 Using with Moose
 
 This module appears to work with L<Moose>, and there is now a small
