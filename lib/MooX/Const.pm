@@ -175,6 +175,11 @@ keys.
 
 Unfortunately, this behaviour is not replicated with array references.
 
+=head2 Using with Moose
+
+This module appears to work with L<Moose>, and there is now a small
+test suite.
+
 =head1 SEE ALSO
 
 L<Const::Fast>
