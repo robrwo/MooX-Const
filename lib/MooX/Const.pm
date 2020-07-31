@@ -19,7 +19,7 @@ use Types::Standard qw( Value Object Ref );
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.4.4';
+our $VERSION = 'v0.4.5';
 
 =head1 SYNOPSIS
 
