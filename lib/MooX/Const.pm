@@ -185,6 +185,11 @@ test suite.
 
 It does not work with L<Mouse>. Pull requests are welcome.
 
+=head2 Write-Once Attributes
+
+L<Class::Accessor> antlers/moose-like mode uses "wo" for write-only
+attributes, not write-once attributes.
+
 =head1 SEE ALSO
 
 L<Const::Fast>

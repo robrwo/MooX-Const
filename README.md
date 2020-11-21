@@ -93,6 +93,11 @@ test suite.
 
 It does not work with [Mouse](https://metacpan.org/pod/Mouse). Pull requests are welcome.
 
+## Write-Once Attributes
+
+[Class::Accessor](https://metacpan.org/pod/Class::Accessor) antlers/moose-like mode uses "wo" for write-only
+attributes, not write-once attributes.
+
 # SEE ALSO
 
 [Const::Fast](https://metacpan.org/pod/Const::Fast)
