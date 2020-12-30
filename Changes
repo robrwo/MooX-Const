@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Added "once" as alternative to "wo" attributes. "wo" is now an
+    alias for "once", and is documented as deprecated, GH#3.
 
 v0.4.5    2020-11-21 12:44:03+00:00 Europe/London
   [Documentation]
