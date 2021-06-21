@@ -112,6 +112,8 @@ As of v0.5.0, you should be using "once" instead of "wo".
 
 [Moo](https://metacpan.org/pod/Moo)
 
+[MooseX::SetOnce](https://metacpan.org/pod/MooseX::SetOnce)
+
 [Types::Const](https://metacpan.org/pod/Types::Const)
 
 [Type::Tiny](https://metacpan.org/pod/Type::Tiny)

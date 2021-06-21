@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Bumped copyright year.
 
+  - Updated SEE ALSO.
+
 v0.5.0    2020-12-30 16:54:53+00:00 Europe/London
   [Enhancements]
   - Added "once" as alternative to "wo" attributes. "wo" is now an

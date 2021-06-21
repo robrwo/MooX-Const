@@ -209,6 +209,8 @@ L<Devel::StrictMode>
 
 L<Moo>
 
+L<MooseX::SetOnce>
+
 L<Types::Const>
 
 L<Type::Tiny>
