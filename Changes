@@ -6,6 +6,9 @@ Revision history for {{ $dist->name }}:
 
   - Fix encoding of links in README.
 
+  [Other]
+  - Removed bad rule from MANIFEST.SKIP.
+
 v0.5.1    2021-06-21 16:47:46+01:00 Europe/London
   [Documentation]
   - Bumped copyright year.
