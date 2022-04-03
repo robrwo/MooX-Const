@@ -165,13 +165,20 @@ sub _process_has {
                     }
                 }
 
+                $opts{is} = $once ? 'rw' : 'ro';
 
-                if ($opts{trigger} && ($is ne "once")) {
-                    croak "triggers are not applicable to const attributes";
-                }
+            }
 
-                $opts{is}  = $once ? 'rw' : 'ro';
+            if ($opts{trigger} && ($is ne "once")) {
+                croak "triggers are not applicable to const attributes";
+            }
 
+            if ($opts{writer} && ($is ne "once")) {
+                croak "writers are not applicable to const attributes";
+            }
+
+            if ($opts{clearer}) {
+                croak "clearers are not applicable to const attributes";
             }
 
         }

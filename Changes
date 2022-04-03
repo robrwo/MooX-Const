@@ -1,6 +1,12 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Writers will throw errors, unless it is a write-once attribute.
+
+  - Clearers will throw errors.
+
+  - Fix error check for triggers on value types.
 
 v0.5.2    2022-04-03 16:30:15+01:00 Europe/London
   [Bug Fixes]
