@@ -11,7 +11,7 @@ use Moo       ();
 use Moo::Role ();
 use Scalar::Util qw/ blessed /;
 use Types::Const qw( Const );
-use Types::Standard qw( Value Object Ref );
+use Types::Standard qw( is_CodeRef Value Object Ref );
 
 # RECOMMEND PREREQ: Types::Const v0.3.6
 # RECOMMEND PREREQ: Type::Tiny::XS
@@ -151,7 +151,18 @@ sub _process_has {
 
                 if ($strict) {
                     $opts{isa} = Const[$isa];
-                    $opts{coerce} = $opts{isa}->coercion;
+                    if ( my $next = $opts{coerce} ) {
+
+                        if (is_CodeRef($next)) {
+                            $opts{coerce} = sub { $opts{isa}->coercion->( $next->( $_[0] ) ) };
+                        }
+                        else {
+                            $opts{coerce} = sub { $opts{isa}->coercion->( $isa->coercion->( $_[0] ) ) };
+                        }
+                    }
+                    else {
+                        $opts{coerce} = $opts{isa}->coercion;
+                    }
                 }
 
 

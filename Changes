@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Wrap coercions, fixes GH#4.
+
   [Documentation]
   - Bumped copyright year.
 
