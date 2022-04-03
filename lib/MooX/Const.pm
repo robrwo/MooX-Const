@@ -19,7 +19,7 @@ use Types::Standard qw( is_CodeRef Value Object Ref );
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.5.2';
+our $VERSION = 'v0.5.3';
 
 =head1 SYNOPSIS
 
