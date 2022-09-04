@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Other]
+  - Sign distribution.
 
 v0.5.3    2022-04-03 17:42:59+01:00 Europe/London
   [Bug Fixes]
