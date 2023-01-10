@@ -104,6 +104,14 @@ attributes, not write-once attributes.
 
 As of v0.5.0, you should be using "once" instead of "wo".
 
+# SUPPORT FOR OLDER PERL VERSIONS
+
+Since v0.6.0, the this module requires Perl v5.14 or later.
+
+If you need this module on Perl v5.10, please use one of the v0.5.x
+versions of this module.  Significant bug or security fixes may be
+backported to those versions.
+
 # SEE ALSO
 
 [Const::Fast](https://metacpan.org/pod/Const%3A%3AFast)

@@ -3,7 +3,7 @@ package MooX::Const;
 # ABSTRACT: Syntactic sugar for constant and write-once Moo attributes
 
 use utf8;
-use v5.10.1;
+use v5.14;
 
 use Carp qw( croak );
 use Devel::StrictMode;
@@ -218,6 +218,14 @@ L<Class::Accessor> antlers/moose-like mode uses "wo" for write-only
 attributes, not write-once attributes.
 
 As of v0.5.0, you should be using "once" instead of "wo".
+
+=head1 SUPPORT FOR OLDER PERL VERSIONS
+
+Since v0.6.0, the this module requires Perl v5.14 or later.
+
+If you need this module on Perl v5.10, please use one of the v0.5.x
+versions of this module.  Significant bug or security fixes may be
+backported to those versions.
 
 =head1 SEE ALSO
 

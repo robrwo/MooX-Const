@@ -1,10 +1,15 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Incompatible Changes]
+  - Minimum Perl version is v5.14.
+
   [Documentation]
   - Bumped copyright year.
 
   - Added Sub::Trigger::Lock to SEE ALSO.
+
+  - Documented support for older Perl versions.
 
 v0.5.4    2022-09-04 16:02:53+01:00 Europe/London
   [Other]
