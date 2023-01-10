@@ -145,7 +145,7 @@ Kang-min Liu 劉康民 <gugod@gugod.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2018-2022 by Robert Rothenberg.
+This software is Copyright (c) 2018-2023 by Robert Rothenberg.
 
 This is free software, licensed under:
 
