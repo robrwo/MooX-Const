@@ -229,6 +229,8 @@ L<Moo>
 
 L<MooseX::SetOnce>
 
+L<Sub::Trigger::Lock>
+
 L<Types::Const>
 
 L<Type::Tiny>

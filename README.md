@@ -114,6 +114,8 @@ As of v0.5.0, you should be using "once" instead of "wo".
 
 [MooseX::SetOnce](https://metacpan.org/pod/MooseX%3A%3ASetOnce)
 
+[Sub::Trigger::Lock](https://metacpan.org/pod/Sub%3A%3ATrigger%3A%3ALock)
+
 [Types::Const](https://metacpan.org/pod/Types%3A%3AConst)
 
 [Type::Tiny](https://metacpan.org/pod/Type%3A%3ATiny)

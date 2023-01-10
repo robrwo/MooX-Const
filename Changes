@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Bumped copyright year.
 
+  - Added Sub::Trigger::Lock to SEE ALSO.
+
 v0.5.4    2022-09-04 16:02:53+01:00 Europe/London
   [Other]
   - Sign distribution.
