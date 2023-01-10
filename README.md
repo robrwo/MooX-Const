@@ -59,8 +59,8 @@ has setting => (
 This allows you to set the attribute _once_. The value is coerced
 into a constant, and cannot be changed again.
 
-Note that "wo" is a deprecated synonym for "once". It will be removed
-in the future, since "wo" is used for "write-only" in some Moose-like
+Note that "wo" is a removed synonym for "once". It no longer works in
+v0.6.0, since "wo" is used for "write-only" in some Moose-like
 extensions.
 
 As of v0.4.0, this now supports the `strict` setting:
@@ -96,13 +96,6 @@ This module appears to work with [Moose](https://metacpan.org/pod/Moose), and th
 test suite.
 
 It does not work with [Mouse](https://metacpan.org/pod/Mouse). Pull requests are welcome.
-
-## Write-Once Attributes
-
-[Class::Accessor](https://metacpan.org/pod/Class%3A%3AAccessor) antlers/moose-like mode uses "wo" for write-only
-attributes, not write-once attributes.
-
-As of v0.5.0, you should be using "once" instead of "wo".
 
 # SUPPORT FOR OLDER PERL VERSIONS
 

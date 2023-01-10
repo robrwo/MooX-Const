@@ -68,8 +68,8 @@ references:
 This allows you to set the attribute I<once>. The value is coerced
 into a constant, and cannot be changed again.
 
-Note that "wo" is a deprecated synonym for "once". It will be removed
-in the future, since "wo" is used for "write-only" in some Moose-like
+Note that "wo" is a removed synonym for "once". It no longer works in
+v0.6.0, since "wo" is used for "write-only" in some Moose-like
 extensions.
 
 As of v0.4.0, this now supports the C<strict> setting:
@@ -112,8 +112,6 @@ sub _process_has {
     my $strict = STRICT || ( $opts{strict} // 1 );
 
     my $is = $opts{is};
-
-    $is = "once" if $is && $is eq "wo";
 
     my $once = $is && $is eq "once";
 
@@ -211,13 +209,6 @@ This module appears to work with L<Moose>, and there is now a small
 test suite.
 
 It does not work with L<Mouse>. Pull requests are welcome.
-
-=head2 Write-Once Attributes
-
-L<Class::Accessor> antlers/moose-like mode uses "wo" for write-only
-attributes, not write-once attributes.
-
-As of v0.5.0, you should be using "once" instead of "wo".
 
 =head1 SUPPORT FOR OLDER PERL VERSIONS
 

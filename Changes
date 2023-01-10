@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Incompatible Changes]
   - Minimum Perl version is v5.14.
 
+  - The deprecated "wo" (write once) attribute type has been removed. Use "once" instead.
+
   [Documentation]
   - Bumped copyright year.
 
