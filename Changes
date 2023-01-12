@@ -1,6 +1,7 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  No changes sicne v0.6.0.
 
 v0.6.0    2023-01-10 14:46:04+00:00 Europe/London (TRIAL RELEASE)
   [Incompatible Changes]
