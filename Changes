@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Tests]
+  - Increased recommended minimum version of Moo for MooX::TypeTiny tests.
 
 v0.6.1    2023-01-12 14:25:42+00:00 Europe/London
   No changes sicne v0.6.0.
