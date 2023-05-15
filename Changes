@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Documented support policy for older Perls.
+
   [Tests]
   - Increased recommended minimum version of Moo for MooX::TypeTiny tests.
 
