@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.6.2    2023-05-15 19:01:45+01:00 Europe/London
   [Documentation]
   - Documented support policy for older Perls.
 
