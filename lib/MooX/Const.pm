@@ -222,6 +222,8 @@ backported to those versions.
 
 =head1 SEE ALSO
 
+<MooX::Readonly::Attribute>, which has similar functionality to this module.
+
 L<Const::Fast>
 
 L<Devel::StrictMode>
