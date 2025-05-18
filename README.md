@@ -109,6 +109,8 @@ backported to those versions.
 
 # SEE ALSO
 
+<MooX::Readonly::Attribute>, which has similar functionality to this module.
+
 [Const::Fast](https://metacpan.org/pod/Const%3A%3AFast)
 
 [Devel::StrictMode](https://metacpan.org/pod/Devel%3A%3AStrictMode)
