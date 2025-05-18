@@ -4,7 +4,7 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Updated the SEE ALSO section.
 
-  - Added a security policy.
+  - Added a security policy (SECURITY.md) and how to contribute (CONTRIBUTING.md) document.
 
   - Updated the copyright year.
 
