@@ -240,6 +240,8 @@ L<Type::Tiny>
 
 =encoding utf8
 
+=for Test::MixedScripts Common,Latin,Han
+
 =head1 append:AUTHOR
 
 This module was inspired by suggestions from Kang-min Liu 劉康民
