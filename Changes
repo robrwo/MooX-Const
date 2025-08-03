@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fixed cust-and-paste error in CONTRIBUTING.md.
 
 v0.6.4    2025-08-03 12:03:08+01:00 Europe/London
   [Documentation]
