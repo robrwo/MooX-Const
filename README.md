@@ -131,7 +131,7 @@ dzil test
 dzil install --install-command="cpan ."
 ```
 
-For more information, see the `INSTALL` file included with this distribution.
+For more information, see [How to install CPAN modules](https://www.cpan.org/modules/INSTALL.html).
 
 # SUPPORT
 
