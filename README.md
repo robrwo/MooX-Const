@@ -76,10 +76,11 @@ If omitted, `strict` is assumed to be true.
 
 # RECENT CHANGES
 
-Changes for version v0.6.5 (2025-08-03)
+Changes for version v0.6.5 (2025-08-04)
 
 - Documentation
-    - Fixed cust-and-paste error in CONTRIBUTING.md.
+    - Fixed cut-and-paste error in CONTRIBUTING.md.
+    - Fixed errors in the README.
 
 See the `Changes` file for more details.
 
@@ -166,6 +167,8 @@ This module was inspired by suggestions from Kang-min Liu 劉康民
 <gugod@gugod.org> in a [blog post](http://blogs.perl.org/users/robert_rothenberg/2018/11/typeconst-released.html).
 
 # CONTRIBUTOR
+
+Kang-min Liu 劉康民 <gugod@gugod.org>
 
 # COPYRIGHT AND LICENSE
 
