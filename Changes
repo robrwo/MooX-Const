@@ -11,6 +11,8 @@ Revision history for {{ $dist->name }}:
 
   - Removed the INSTALL file.
 
+  - Removed redundant section.
+
   [Tests]
   - Moved author tests into the xt directory.
 

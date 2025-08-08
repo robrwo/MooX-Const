@@ -84,6 +84,7 @@ Changes for version v0.6.5 (2025-08-08)
     - Fixed cut-and-paste error in CONTRIBUTING.md.
     - Fixed errors in the README.
     - Removed the INSTALL file.
+    - Removed redundant section.
 - Tests
     - Moved author tests into the xt directory.
     - Added more author tests.
