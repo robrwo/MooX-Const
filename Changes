@@ -11,6 +11,8 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Moved author tests into the xt directory.
 
+  - Added more author tests.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
