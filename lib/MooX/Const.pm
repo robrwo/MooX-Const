@@ -88,7 +88,7 @@ If omitted, C<strict> is assumed to be true.
 =cut
 
 sub import {
-    my $class = shift;
+    # my $class = shift;
 
     my $target = caller;
 
