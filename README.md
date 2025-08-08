@@ -76,11 +76,20 @@ If omitted, `strict` is assumed to be true.
 
 # RECENT CHANGES
 
-Changes for version v0.6.5 (2025-08-04)
+Changes for version v0.6.5 (2025-08-08)
 
+- Enhancements
+    - Internal code improvements.
 - Documentation
     - Fixed cut-and-paste error in CONTRIBUTING.md.
     - Fixed errors in the README.
+    - Removed the INSTALL file.
+- Tests
+    - Moved author tests into the xt directory.
+    - Added more author tests.
+- Toolchain
+    - Improved Dist::Zilla configuration.
+    - Stop regenerating MANIFEST.SKIP.
 
 See the `Changes` file for more details.
 
