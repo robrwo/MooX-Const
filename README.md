@@ -90,6 +90,7 @@ Changes for version v0.6.5 (2025-08-08)
 - Toolchain
     - Improved Dist::Zilla configuration.
     - Stop regenerating MANIFEST.SKIP.
+    - Add GitHub workflow to run tests.
 
 See the `Changes` file for more details.
 
