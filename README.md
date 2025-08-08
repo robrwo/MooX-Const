@@ -1,6 +1,6 @@
 # NAME
 
-MooX::Const - Syntactic sugar for constant and write-once Moo attributes
+MooX::Const - Syntactic sugar for constant and write-once Moo(se) attributes
 
 # SYNOPSIS
 

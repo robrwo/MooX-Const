@@ -1,6 +1,6 @@
 package MooX::Const;
 
-# ABSTRACT: Syntactic sugar for constant and write-once Moo attributes
+# ABSTRACT: Syntactic sugar for constant and write-once Moo(se) attributes
 
 use utf8;
 use v5.14;
