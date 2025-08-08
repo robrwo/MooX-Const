@@ -21,6 +21,12 @@ use namespace::autoclean;
 
 our $VERSION = 'v0.6.5';
 
+=begin :prelude
+
+=for stopwords backported const isa ro wo
+
+=end :prelude
+
 =head1 SYNOPSIS
 
   use Moo;
