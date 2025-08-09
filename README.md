@@ -35,9 +35,8 @@ It modifies the `has` function to support "const" attributes.  These
 are read-only ("ro") attributes for references, where the underlying
 data structure has been set as read-only.
 
-This will return an error if there is no "isa", the "isa" is not a
-[Type::Tiny](https://metacpan.org/pod/Type%3A%3ATiny) type, if it is not a reference, or if it is blessed
-object.
+This will return an error if there is no "isa", the "isa" is not a code reference (v0.7.0) or a [Type::Tiny](https://metacpan.org/pod/Type%3A%3ATiny) type that
+is is not a reference, or a blessed object.
 
 Simple value types such as `Int` or `Str` are silently converted to
 read-only attributes.
@@ -76,11 +75,15 @@ If omitted, `strict` is assumed to be true.
 
 # RECENT CHANGES
 
-Changes for version v0.6.5 (2025-08-08)
+Changes for version v0.7.0 (2025-08-09)
 
+- Incompatible Changes
+    - Minimum Perl version is v5.20.
 - Enhancements
+    - The isa option of attributes can be a code reference.
     - Internal code improvements.
 - Documentation
+    - Clarified the documentation on the isa option of attributes.
     - Fixed cut-and-paste error in CONTRIBUTING.md.
     - Fixed errors in the README.
     - Removed the INSTALL file.
@@ -103,10 +106,12 @@ This module lists the following modules as runtime dependencies:
 - [Devel::StrictMode](https://metacpan.org/pod/Devel%3A%3AStrictMode)
 - [Moo](https://metacpan.org/pod/Moo) version 1.006000 or later
 - [Scalar::Util](https://metacpan.org/pod/Scalar%3A%3AUtil)
+- [Type::Tiny](https://metacpan.org/pod/Type%3A%3ATiny)
 - [Types::Const](https://metacpan.org/pod/Types%3A%3AConst) version v0.3.3 or later
 - [Types::Standard](https://metacpan.org/pod/Types%3A%3AStandard)
+- [experimental](https://metacpan.org/pod/experimental)
 - [namespace::autoclean](https://metacpan.org/pod/namespace%3A%3Aautoclean)
-- [perl](https://metacpan.org/pod/perl) version v5.14.0 or later
+- [perl](https://metacpan.org/pod/perl) version v5.20.0 or later
 - [utf8](https://metacpan.org/pod/utf8)
 
 See the `cpanfile` file for the full list of prerequisites.
@@ -148,7 +153,7 @@ For more information, see [How to install CPAN modules](https://www.cpan.org/mod
 
 Only the latest version of this module will be supported.
 
-This module requires Perl v5.14 or later.
+This module requires Perl v5.20 or later.
 Future releases may only support Perl versions released in the last ten (10) years.
 
 ## Reporting Bugs and Submitting Feature Requests
