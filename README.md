@@ -91,6 +91,7 @@ Changes for version v0.7.0 (2025-08-09)
 - Tests
     - Moved author tests into the xt directory.
     - Added more author tests.
+    - Added tests with MooseX::MungeHas.
 - Toolchain
     - Improved Dist::Zilla configuration.
     - Stop regenerating MANIFEST.SKIP.

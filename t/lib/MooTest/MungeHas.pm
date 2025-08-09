@@ -1,6 +1,8 @@
-package MooseTest;
+package MooTest::MungeHas;
 
-use Moose;
+use Moo '1.006000';
+
+use if $ENV{MOOX_CONST_TYPE_TINY}, 'MooX::TypeTiny';
 
 use MooX::Const;
 use MooseX::MungeHas;
@@ -18,6 +20,7 @@ has bar => (
     is      => 'const',
     isa     => ArrayRef[Int],
     default => sub { [1] },
+    coerce  => sub { ref( $_[0] ) ? $_[0] : [ $_[0] ] }
 );
 
 has baz => (
@@ -36,4 +39,9 @@ has bop => (
     default => sub { { x => 1 } },
 );
 
-__PACKAGE__->meta->make_immutable();
+has cr => (
+    is  => 'ro',
+    isa => sub { die "ouch" unless $_[0] && $_[0] !~ /^0/ },
+);
+
+1;

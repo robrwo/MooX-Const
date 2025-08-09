@@ -25,6 +25,8 @@ Revision history for {{ $dist->name }}:
 
   - Added more author tests.
 
+  - Added tests with MooseX::MungeHas.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 

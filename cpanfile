@@ -25,6 +25,7 @@ on 'test' => sub {
   requires "File::Spec" => "0";
   requires "Module::Metadata" => "1.000015";
   requires "Moo" => "1.006000";
+  requires "MooseX::MungeHas" => "0";
   requires "Test::More" => "0";
   requires "Test::Most" => "0";
   requires "if" => "0";
