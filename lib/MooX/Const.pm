@@ -12,6 +12,7 @@ use Moo::Role ();
 use Scalar::Util qw/ blessed /;
 use Types::Const qw( Const );
 use Types::Standard qw( is_CodeRef Value Object Ref );
+use Type::Tiny;
 
 # RECOMMEND PREREQ: Types::Const v0.3.6
 # RECOMMEND PREREQ: Type::Tiny::XS
@@ -58,9 +59,8 @@ It modifies the C<has> function to support "const" attributes.  These
 are read-only ("ro") attributes for references, where the underlying
 data structure has been set as read-only.
 
-This will return an error if there is no "isa", the "isa" is not a
-L<Type::Tiny> type, if it is not a reference, or if it is blessed
-object.
+This will return an error if there is no "isa", the "isa" is not a code reference or a L<Type::Tiny> type that is is not
+a reference, or a blessed object.
 
 Simple value types such as C<Int> or C<Str> are silently converted to
 read-only attributes.
@@ -124,6 +124,10 @@ sub _process_has( $name, %opts ) {
     if ($is && $is =~ /^(?:const|once)$/ ) {
 
         if ( my $isa = $opts{isa} ) {
+
+            if ( is_CodeRef($isa) ) {
+                $isa = Type::Tiny->new( parent => Value, constraint => $isa );
+            }
 
             unless ( blessed($isa) && $isa->isa('Type::Tiny') ) {
                 croak "isa must be a Type::Tiny type";
