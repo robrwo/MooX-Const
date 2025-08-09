@@ -22,7 +22,7 @@ use experimental qw( signatures );
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.6.5';
+our $VERSION = 'v0.7.0';
 
 =begin :prelude
 
@@ -59,8 +59,8 @@ It modifies the C<has> function to support "const" attributes.  These
 are read-only ("ro") attributes for references, where the underlying
 data structure has been set as read-only.
 
-This will return an error if there is no "isa", the "isa" is not a code reference or a L<Type::Tiny> type that is is not
-a reference, or a blessed object.
+This will return an error if there is no "isa", the "isa" is not a code reference (v0.7.0) or a L<Type::Tiny> type that
+is is not a reference, or a blessed object.
 
 Simple value types such as C<Int> or C<Str> are silently converted to
 read-only attributes.
