@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Incompatible Changes]
+  - Minimum Perl version is v5.20.
+
   [Enhancements]
   - Internal code improvements.
 

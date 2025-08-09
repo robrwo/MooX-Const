@@ -3,7 +3,7 @@ package MooX::Const;
 # ABSTRACT: Syntactic sugar for constant and write-once Moo(se) attributes
 
 use utf8;
-use v5.14;
+use v5.20;
 
 use Carp qw( croak );
 use Devel::StrictMode;
@@ -16,6 +16,8 @@ use Types::Standard qw( is_CodeRef Value Object Ref );
 # RECOMMEND PREREQ: Types::Const v0.3.6
 # RECOMMEND PREREQ: Type::Tiny::XS
 # RECOMMEND PREREQ: MooX::TypeTiny
+
+use experimental qw( signatures );
 
 use namespace::autoclean;
 
@@ -93,8 +95,7 @@ If omitted, C<strict> is assumed to be true.
 
 =cut
 
-sub import {
-    # my $class = shift;
+sub import(@) {
 
     my $target = caller;
 
@@ -104,7 +105,7 @@ sub import {
       : \&Moo::Role::_install_tracked;
 
     if ( my $has = $target->can('has') ) {
-        my $new_has = sub {
+        my $new_has = sub(@) {
             $has->( _process_has(@_) );
         };
         $installer->( $target, "has", $new_has );
@@ -112,8 +113,7 @@ sub import {
 
 }
 
-sub _process_has {
-    my ( $name, %opts ) = @_;
+sub _process_has( $name, %opts ) {
 
     my $strict = STRICT || ( $opts{strict} // 1 );
 
@@ -158,10 +158,10 @@ sub _process_has {
                     if ( my $next = $opts{coerce} ) {
 
                         if (is_CodeRef($next)) {
-                            $opts{coerce} = sub { $opts{isa}->coercion->( $next->( $_[0] ) ) };
+                            $opts{coerce} = sub($val) { $opts{isa}->coercion->( $next->($val) ) };
                         }
                         else {
-                            $opts{coerce} = sub { $opts{isa}->coercion->( $isa->coercion->( $_[0] ) ) };
+                            $opts{coerce} = sub($val) { $opts{isa}->coercion->( $isa->coercion->($val) ) };
                         }
                     }
                     else {
@@ -247,7 +247,7 @@ This module was inspired by suggestions from Kang-min Liu 劉康民
 
 Only the latest version of this module will be supported.
 
-This module requires Perl v5.14 or later.
+This module requires Perl v5.20 or later.
 Future releases may only support Perl versions released in the last ten (10) years.
 
 =head2 Reporting Bugs and Submitting Feature Requests
