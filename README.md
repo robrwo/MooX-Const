@@ -73,32 +73,6 @@ only be applied when running in strict mode, see [Devel::StrictMode](https://met
 
 If omitted, `strict` is assumed to be true.
 
-# RECENT CHANGES
-
-Changes for version v0.7.0 (2025-08-09)
-
-- Incompatible Changes
-    - Minimum Perl version is v5.20.
-- Enhancements
-    - The isa option of attributes can be a code reference.
-    - Internal code improvements.
-- Documentation
-    - Clarified the documentation on the isa option of attributes.
-    - Fixed cut-and-paste error in CONTRIBUTING.md.
-    - Fixed errors in the README.
-    - Removed the INSTALL file.
-    - Removed redundant section.
-- Tests
-    - Moved author tests into the xt directory.
-    - Added more author tests.
-    - Added tests with MooseX::MungeHas.
-- Toolchain
-    - Improved Dist::Zilla configuration.
-    - Stop regenerating MANIFEST.SKIP.
-    - Add GitHub workflow to run tests.
-
-See the `Changes` file for more details.
-
 # REQUIREMENTS
 
 This module lists the following modules as runtime dependencies:
