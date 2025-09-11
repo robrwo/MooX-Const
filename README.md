@@ -145,8 +145,8 @@ then see `SECURITY.md` for instructions how to report security vulnerabilities.
 
 # SOURCE
 
-The development version is on github at [https://github.com/robrwo/MooX-Const](https://github.com/robrwo/MooX-Const)
-and may be cloned from [git://github.com/robrwo/MooX-Const.git](git://github.com/robrwo/MooX-Const.git)
+The development version is on github at ["robrwo/MooX-Const" in github.com](https://metacpan.org/pod/github.com#robrwo-MooX-Const)
+and may be cloned from ["robrwo/MooX-Const.git" in github.com](https://metacpan.org/pod/github.com#robrwo-MooX-Const.git)
 
 See `CONTRIBUTING.md` for more information.
 
