@@ -73,6 +73,17 @@ only be applied when running in strict mode, see [Devel::StrictMode](https://met
 
 If omitted, `strict` is assumed to be true.
 
+# RECENT CHANGES
+
+Changes for version v0.7.1 (2025-09-11)
+
+- Bugs
+    - Fixed warnings about using @\_ in signatured subroutines.
+- Tests
+    - Added more author tests.
+
+See the `Changes` file for more details.
+
 # REQUIREMENTS
 
 This module lists the following modules as runtime dependencies:
