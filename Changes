@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bugs]
+  - Fixed warnings about using @_ in signatured subroutines.
+
   [Tests]
   - Added more author tests.
 

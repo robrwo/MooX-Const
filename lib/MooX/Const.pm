@@ -105,8 +105,8 @@ sub import(@) {
       : \&Moo::Role::_install_tracked;
 
     if ( my $has = $target->can('has') ) {
-        my $new_has = sub(@) {
-            $has->( _process_has(@_) );
+        my $new_has = sub(@args) {
+            $has->( _process_has(@args) );
         };
         $installer->( $target, "has", $new_has );
     }
