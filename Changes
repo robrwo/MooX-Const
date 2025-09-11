@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.7.1    2025-09-11 16:42:32+01:00 Europe/London
   [Bugs]
   - Fixed warnings about using @_ in signatured subroutines.
 

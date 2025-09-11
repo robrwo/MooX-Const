@@ -22,7 +22,7 @@ use experimental qw( signatures );
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.7.1';
+our $VERSION = 'v0.7.2';
 
 =begin :prelude
 
