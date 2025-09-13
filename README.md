@@ -75,10 +75,8 @@ If omitted, `strict` is assumed to be true.
 
 # RECENT CHANGES
 
-Changes for version v0.7.1 (2025-09-11)
+Changes for version v0.7.2 (2025-09-13)
 
-- Bugs
-    - Fixed warnings about using @\_ in signatured subroutines.
 - Tests
     - Added more author tests.
 
