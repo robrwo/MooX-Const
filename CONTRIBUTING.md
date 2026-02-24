@@ -183,6 +183,6 @@ This file was adapted from an initial `CONTRIBUTING.mkdn` file from David
 Golden under the terms of the Apache 2 license.
 
 The text in "AI Contributions" was adapted from the
-[Contributing to Servo](https://book.servo.org/contributing.html) section of
+[Contributing to Servo](https://book.servo.org/contributing/getting-started.html#ai-contributions) section of
 The Servo Book, which is licensed as no rights reserved under
 [CC0](https://creativecommons.org/public-domain/cc0/).

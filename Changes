@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updating broken link in CONTRIBUTING.md.
+
   [Tests]
   - Added more author tests.
 
