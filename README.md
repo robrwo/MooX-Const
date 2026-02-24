@@ -75,8 +75,11 @@ If omitted, `strict` is assumed to be true.
 
 # RECENT CHANGES
 
-Changes for version v0.7.2 (2025-09-13)
+Changes for version v0.7.2 (2026-02-24)
 
+- Documentation
+    - Updating broken link in CONTRIBUTING.md.
+    - Update copyright year.
 - Tests
     - Added more author tests.
 
