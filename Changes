@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Updating broken link in CONTRIBUTING.md.
 
+  - Fixed broken links in SOURCE.
+
   - Update copyright year.
 
   [Tests]
